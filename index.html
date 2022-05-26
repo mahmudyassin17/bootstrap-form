@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form & Grid</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+    <!-- form start -->
+    <section class="section0 w-100 mx-auto my-5 border border-danger border-3 p-4 rounded-3">
+        <div class="bg-danger text-center border-2 rounded-2">
+            <h2 class="p-2 text-light">Personal info Validation</h2>
+        </div>
+        <form class="row g-3 needs-validation" novalidate>
+
+            <!-- first name -->
+            <div class="col-md-4">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" name="firstname" class="form-control firstname" id="firstname"
+                    placeholder="Enter Your First Name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Enter Your First Name
+                </div>
+            </div>
+
+            <!-- last name -->
+            <div class="col-md-4">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your Last Name"
+                    required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Enter your Last Name
+                </div>
+            </div>
+
+            <!-- email -->
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
+                    required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Enter your email
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-danger" type="submit">Submit form</button>
+            </div>
+        </form>
+
+
+    </section>
+    <section class="section-tooltip w-100 mx-auto my-5 border border-success border-3 p-4 rounded-3">
+        <div class="bg-success text-center border-2 rounded-2">
+            <h2 class="p-2 text-light">Personal info Validation with Tooltip</h2>
+        </div>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+                <label for="firstname" class="form-label">First name</label>
+                <input type="text" class="form-control firstname" name="firstname" id="firstname"
+                    placeholder="Enter your First Name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-tooltip">
+                    Enter your First Name
+                </div>
+            </div>
+
+            <div class="col-md-4 position-relative">
+                <label for="lastname" class="form-label">Last name</label>
+                <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Enter your Last Name"
+                    required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-tooltip">
+                    Enter your Last Name
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-tooltip">
+                    Enter your email
+                </div>
+            </div>
+            <div class="col-md-6 position-relative">
+                <label for="validationTooltip03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationTooltip03" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip04" class="form-label">State</label>
+                <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class="invalid-tooltip">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationTooltip05" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-success" type="submit">Submit form</button>
+            </div>
+        </form>
+
+
+    </section>
+
+    <section class="section1 w-50 mx-auto my-5 border border-info border-3 p-4 rounded-3">
+        <div class="bg-primary text-center border-2 rounded-2">
+            <h2 class="p-2 text-light">Provide Login Info</h2>
+        </div>
+        <form class="">
+            <div class="form-group">
+                <label for="email1">Email address</label>
+                <input type="email" class="form-control" id="email1" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" class="form-control" id="password1" placeholder="Password" required>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="gender-check-input check1" id="check1">
+                <label class="form-check-label" for="check1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+    <section class="section2 w-50 mx-auto my-5 border border-success border-3 p-4 rounded-3">
+        <div class="bg-success text-center border-2 rounded-2">
+            <h2 class="p-2 text-light">Select your Items</h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select the sports channel you want to subscribe: </label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Cricket</option>
+                    <option>Football</option>
+                    <option>Wrestling</option>
+                    <option>Boxing</option>
+                    <option>Chess</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Please select your favourite fruit :</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>Mango</option>
+                    <option>Jack fruit</option>
+                    <option>Banana</option>
+                    <option>Orange</option>
+                    <option>Apple</option>
+                </select>
+            </div>
+            <!-- radio buttons start -->
+            <h5 class="mt-2">Confirm Your Gender:</h5>
+            <div class="gender-check">
+                <input class="gender-input" type="radio" name="gender-input" id="male" value="male" checked>
+                <label class="gender-check-label" for="male">
+                    Male
+                </label>
+            </div>
+            <div class="gender-check">
+                <input class="gender-check-input" type="radio" name="gender-input" id="female" value="female">
+                <label class="gender-check-label" for="female">
+                    Female
+                </label>
+            </div>
+            <div class="gender-check disabled">
+                <input class="gender-check-input" type="radio" name="gender-input" id="gender-disabled" value="option3"
+                    disabled>
+                <label class="gender-check-label" for="gender-disabled">
+                    Disabled Gender check
+                </label>
+            </div>
+            <!-- radio buttons end -->
+            <div class="form-group mt-3">
+                <label for="textarea1">Insert the article you want to publish:</label>
+                <textarea class="form-control" id="textarea1" rows="3"></textarea>
+            </div>
+
+            <div class="form-group mt-4">
+                <label for="file1">Please insert a document</label>
+                <input type="file" class="file1" id="File1">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </section>
+    <section class="section-3 w-50 mx-auto my-5 border border-danger border-3 p-4 rounded-3">
+        <div class="bg-danger text-center border-2 rounded-2">
+            <h2 class="p-2 text-light">Register with Full Address</h2>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Dhanmondi,Dhaka">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="gender-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger">Sign in</button>
+        </form>
+    </section>
+    <!-- form end -->
+
+    <!-- js links -->
+    <script src="js/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
